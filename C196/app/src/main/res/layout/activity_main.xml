@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="Activities.MainActivity">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!--<GridLayout-->
+        <!--android:columnCount="2"-->
+        <!--android:rowCount="3"-->
+        <!--android:columnOrderPreserved="false"-->
+        <!--android:alignmentMode="alignMargins"-->
+        <!--android:layout_weight="8"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:padding="14dp"-->
+        <!--&gt;-->
+        <!--&lt;!&ndash;Row 1&ndash;&gt;-->
+        <!--&lt;!&ndash;Column 1&ndash;&gt;-->
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/addTerm"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_marginBottom="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--app:cardElevation="8dp"-->
+            <!--app:cardCornerRadius="8dp"-->
+            <!--&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_margin="16dp">-->
+                <!--<TextView-->
+                    <!--android:textColor="@android:color/black"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:text="@string/add_term"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+            <!--</LinearLayout>-->
+        <!--</android.support.v7.widget.CardView>-->
+        <!--&lt;!&ndash;Column 2&ndash;&gt;-->
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/addCourse"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_marginBottom="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--app:cardElevation="8dp"-->
+            <!--app:cardCornerRadius="8dp"-->
+            <!--&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_margin="16dp">-->
+                <!--<TextView-->
+                    <!--android:textColor="@android:color/black"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:text="@string/add_course"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+            <!--</LinearLayout>-->
+        <!--</android.support.v7.widget.CardView>-->
+        <!--&lt;!&ndash;Row 2&ndash;&gt;-->
+        <!--&lt;!&ndash;Column 1&ndash;&gt;-->
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/addAssess"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_marginBottom="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--app:cardElevation="8dp"-->
+            <!--app:cardCornerRadius="8dp"-->
+            <!--&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_margin="16dp">-->
+                <!--<TextView-->
+                    <!--android:textColor="@android:color/black"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:text="@string/add_assessment"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+            <!--</LinearLayout>-->
+        <!--</android.support.v7.widget.CardView>-->
+
+        <!--&lt;!&ndash;Column 2&ndash;&gt;-->
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/listOfCourse"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_marginBottom="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--app:cardElevation="8dp"-->
+            <!--app:cardCornerRadius="8dp"-->
+            <!--&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_margin="16dp">-->
+                <!--<TextView-->
+                    <!--android:textColor="@android:color/black"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:text="@string/list_course"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+            <!--</LinearLayout>-->
+        <!--</android.support.v7.widget.CardView>-->
+        <!--&lt;!&ndash;Row 3&ndash;&gt;-->
+        <!--&lt;!&ndash;Column 1&ndash;&gt;-->
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/listOfTerms"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_marginBottom="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--app:cardElevation="8dp"-->
+            <!--app:cardCornerRadius="8dp"-->
+            <!--&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_margin="16dp">-->
+                <!--<TextView-->
+                    <!--android:textColor="@android:color/black"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:text="@string/list_terms"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+            <!--</LinearLayout>-->
+        <!--</android.support.v7.widget.CardView>-->
+        <!--&lt;!&ndash;Column 2&ndash;&gt;-->
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/test"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_marginBottom="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--app:cardElevation="8dp"-->
+            <!--app:cardCornerRadius="8dp"-->
+            <!--&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_margin="16dp">-->
+                <!--<TextView-->
+                    <!--android:textColor="@android:color/black"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:text="test"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+            <!--</LinearLayout>-->
+        <!--</android.support.v7.widget.CardView>-->
+    <!--</GridLayout>-->
+</LinearLayout>

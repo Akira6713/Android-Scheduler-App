@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context="Activities.AddCourseActivity">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/CourseNameID"
+               android:text="@string/course_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:textSize="18sp"
+               android:textColor="@color/black"/>
+           <EditText
+               android:id="@+id/CourseNameValueID"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:hint="Course Name"
+               android:textColor="@color/black"
+               android:padding="10dp"
+               android:background="@drawable/border"/>
+           <TextView
+               android:id="@+id/CourseStartDateID"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/course_start"
+               android:textSize="18sp"
+               android:layout_marginTop="10dp"
+               android:textColor="@color/black"/>
+           <TextView
+               android:id="@+id/CourseStartDateValueID"
+               style="@style/Base.Widget.AppCompat.Spinner"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:textSize="16sp" />
+           <Button
+               android:id="@+id/setAlarmStartDate"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/buttonNoification"/>
+
+           <TextView
+               android:id="@+id/CourseEndDateID"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/course_end"
+               android:layout_marginTop="10dp"
+               android:textSize="18sp"
+               android:textColor="@color/black"/>
+           <TextView
+               android:id="@+id/CourseEndDateValueID"
+               style="@style/Base.Widget.AppCompat.Spinner"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:textSize="18sp" />
+           <Button
+               android:id="@+id/setAlarmEndDate"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/buttonNoification"/>
+
+           <Spinner
+               android:id="@+id/course_status_spinner"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp"
+               android:textSize="18sp"
+               android:entries="@array/course_status_arrays"
+               android:prompt="@string/course_prompt" />
+           <Spinner
+               android:id="@+id/course_term_spinner"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp"
+               android:textSize="18sp"
+               android:prompt="@string/termPrompt" />
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <Button
+                   android:id="@+id/courseSaveButtonID"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/save_button" />
+               <Button
+                   android:id="@+id/courseCancelButtonID"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/cancel_button" />
+           </LinearLayout>
+
+       </LinearLayout>
+   </ScrollView>
+
+</LinearLayout>

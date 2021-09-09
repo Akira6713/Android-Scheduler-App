@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Scheduler App</string>
+    <string name="add_term">Add Term</string>
+    <string name="add_course">Add Course</string>
+    <string name="add_assessment">Add Assessment</string>
+    <string name="list_terms">Term List</string>
+    <string name="list_course">Course List</string>
+    <string name="term_name">Term Name</string>
+    <string name="term_start">Term Start Date</string>
+    <string name="term_end">Term End Date</string>
+    <string name="save_button">Save</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="term_list_title">Term List</string>
+    <string name="title_activity_add_course">Add Course Activity</string>
+    <string name="course_mentor_email">Course Teacher Email Address</string>
+    <string name="course_mentor_phone">Course Teacher Phone Number</string>
+    <string name="course_mentor_name">Course Teacher Name</string>
+    <string name="course_status">Course Status</string>
+    <string name="course_end">Course End Date</string>
+    <string name="course_start">Course Start Date</string>
+    <string name="course_name">Course Name</string>
+    <string name="course_prompt">Course Status</string>
+    <string name="add_teacher">Add Teacher</string>
+    <string name="add_assesment">Add Assessment</string>
+    <string name="course_list_title">Course List</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="add_Note">Add Note</string>
+    <string name="note_list_title">List Of Notes</string>
+    <string name="share_button">Share</string>
+    <string name="assess_list_title">Assessment List</string>
+    <string name="teacher_list_title">Teacher List</string>
+    <string name="teacher_name">Teacher Name</string>
+    <string name="teacher_phone">Teacher Phone Number</string>
+    <string name="teacher_email">Teacher Email Address</string>
+    <string name="buttonNoification">Set Notification</string>
+    <string name="termPrompt">Select a Term</string>
+    <string name="listOfCoursesForTerms">Course List</string>
+    <string name="courses">Course</string>
+    <string name="term">Term</string>
+    <string-array name="course_status_arrays">
+        <item>In Progress</item>
+        <item>Dropped</item>
+        <item>Completed</item>
+        <item>Plan to Take</item>
+    </string-array>
+
+    <string-array name="category_arrays">
+        <item>Objective</item>
+        <item>Performance</item>
+    </string-array>
+
+</resources>

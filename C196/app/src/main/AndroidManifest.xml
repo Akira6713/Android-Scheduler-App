@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.c196">
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustPan"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="Activities.TeacherDetail"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name="Activities.TeacherList"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name="Activities.AssessmentList"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity android:name="Activities.NoteList"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name="Activities.NoteDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name="Activities.AddCourseActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name="Activities.TermDetail"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name="Activities.AddTermActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name="Activities.AssessmentDetail"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name="Activities.CourseDetail"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name="Activities.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="Activities.MyNotificationPublisher">
+            <!--<intent-filter>-->
+                <!--<action android:name="action.DISPLAY_NOTIFICATION" />-->
+            <!--</intent-filter>-->
+        </receiver>
+        <!--<service android:name="Activities.ScheduleService" />-->
+        <!--<service android:name="Activities.NotifyService" />-->
+        <!--<receiver android:name=".NotificationPublisher" />-->
+    </application>
+
+</manifest>
